@@ -1,0 +1,336 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------topBar----- */
+.topBar{
+  padding: 10px 0;
+  text-align: right;
+  background-color: #f6f6f6;
+}
+.topBar img{
+  padding-right: 5px;
+}
+.topBar a{
+  text-decoration: none;
+}
+.topBar a:hover{
+	opacity: 0.5;
+  filter: alpha(opacity=70);
+  color: gray;
+}
+.facebook{
+  font-size: 1rem;
+  color:#7488b7; 
+  padding-right:5px;
+}
+.twitter{
+ font-size: 1rem;
+ color:#10afec;
+ border-left: 2px solid #cccccc;
+ padding:0 10px;
+}
+
+/* <----navbar-----> */
+
+.navbar h1{
+	float: left;
+}
+.navbar h1 a{
+	width: 224px;
+	height: 50px;
+	background-image: url(../public/image/logo.png);
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.navbar .menu{
+	float:right;
+	list-style: none;
+}
+.navbar .menu li{
+	display: inline-block;
+	line-height:50px;
+	font-size: 1.1rem;
+}
+.navbar .menu a{
+	text-decoration: none;
+	color: #00cc99;
+	 margin-right: 10px;
+	 padding: 7px 15px;
+}
+.navbar .menu a:hover{
+	opacity: 0.5;
+  filter: alpha(opacity=70);
+	border-bottom:2px solid  #00cc99;
+}
+.clearfix{
+	clear: both;
+}
+
+/* <------banner-------> */
+.banner{
+	display: flex;
+  align-items: center;
+	width: 100%;
+	height:346px;
+	background: url(../public/image/banner.png) no-repeat #212121;
+	background-position:right;
+	margin-bottom: 80px;
+}
+.banner h2{
+  width: 100%;
+	color: white;
+	background-color:rgba(34, 28, 28, 0.4);
+	padding: 50px 30px;
+	font-size: 2.5rem;
+	transition: all 1.5s ease;
+}
+.banner .hidden{
+	opacity: 0;
+}
+
+/* <-----product-------> */
+.product{
+	text-align: center;
+}
+.product .item{
+ display:inline-block;
+	width: 280px;
+	padding: 20px;
+	margin: 10px;
+	text-align: center;
+	box-shadow: 1px 3px 3px #929292;
+}
+.product .item:hover{
+ opacity: 0.5;
+ filter: alpha(opacity=70);
+ font-weight: bold;
+}
+.product .item a{
+ text-decoration: none;
+}
+.item a h3{
+	color: #414141;
+ font-size: 1.1rem;
+ margin: 10px 0;
+}
+.item a h4{
+ height: 140px;
+ min-width: 100%;
+}
+.item a p{
+  color: #777777;
+	text-align: left;
+	font-size: 0.8rem;
+	line-height: 1.3;
+	letter-spacing:2px;
+}
+/* <-----product item1-----> */
+.item .html-logo{
+	background: url(../public/image/html.png) no-repeat center;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+
+}
+/* <-----product item2-----> */
+.item .rwd-logo{
+	background: url(../public/image/rwd.png) no-repeat center;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.rwd-content span{
+ letter-spacing: 5px;
+}
+/* <-----product item3-----> */
+.item .jquery-logo{
+	background: url(../public/image/jquery.png) no-repeat center;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.jquery-content li {
+	color: #777777;
+	font-size: 0.8rem;
+	line-height: 1.3;
+  margin-left: 20px;
+}
+/* <------introduction-----> */
+.introduction{
+  width: 70%;
+	margin: 100px auto;
+}
+.course{
+	width: 100%;
+}
+.course caption{
+	font-size: 1.8rem;
+	color: #414141;
+	padding: 30px 0;
+}
+.course th,.course td{
+ border-top: #9e9c9c 1px solid;
+ border-bottom: #9e9c9c 1px solid;
+ padding: 15px 30px;
+}
+.course th{
+	background-color: #f7f7f7;
+	text-align: left;
+}
+.course td{
+	color:#696969 ;
+}
+.course td span{
+	color: #33b897;
+}
+
+
+
+/* <!------contact-----> */
+.contact{
+	width: 100%;
+	background: -webkit-linear-gradient(lto bottom,#006c51,#03b88a);
+  background: -o-linear-gradient(bto bottom,#006c51,#03b88a);
+  background: -moz-linear-gradient(to bottom,#006c51,#03b88a);
+  background: linear-gradient(to bottom,#006c51,#03b88a);
+  text-align: center;
+}
+/* <-----聯絡欄位的標題------> */
+.contact h3{
+	color: #f0fff0;
+	line-height: 1.5;
+	font-size: 1.4rem;
+  padding:  40px;
+}
+/* <-----section----> */
+.contact section{
+	display: flex;
+	width: 100%;
+}
+.contact-left,.contact-right{
+	width: 50%;
+}
+/* <-----左邊圖片----> */
+.contact-left{
+	margin-left: 25PX;
+	height: 290px;
+	background-color: rgb(252, 252, 252);
+}
+/* <-----輸入欄位-----> */
+.contact-input label,.contact-input input{
+color: #f0fff0;
+font-size: 1.2rem;
+ display: block;
+ text-align: left;
+ margin-left: 30px;
+ width: 85%;
+ border-radius: 5px;
+}
+.contact-input input{
+	color: #9e9c9c;
+	padding: 5px 16px;
+	margin-bottom: 20px;
+}
+/* <-----送出按扭----> */
+.btn {
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 20px 60px 0;
+  padding-left: 5px;
+	margin-left: 30px;
+}
+.btn button{
+	background-color: #00cc99;
+  font-size: 1.1rem;
+	padding: 5px 25px;
+	border: none;
+	border-radius: 5px;
+}
+.btn a button{
+	color: #f0fff0;
+}
+.btn a button:hover{
+	outline: none;
+	opacity: 0.5;
+	filter: alpha(opacity=70);
+	color: rgb(165, 164, 164);
+}
+
+
+/* <-------footer-------> */
+.footer h1{
+	float: left;
+	padding: 30px 20px;
+}
+.footer h1 a{
+	width: 180px;
+	height: 50px;
+	background: url(../public/image/footerLogo.png) no-repeat ;
+	display: block;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.contact-info{
+	float: right;
+	padding: 30px 20px;
+}
+.contact-info p{
+	font-size: 1.1rem;
+	color: #414141;
+}
+.contact-info span{
+	color: rgb(245, 80, 80);
+	font-family: 'Gelasio', serif;
+  font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+
+}
